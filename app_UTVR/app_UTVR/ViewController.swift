@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var AR: UIButton!
     
+    var timer: Timer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,7 +33,7 @@ class ViewController: UIViewController {
         
         About.setTitleColor(UIColor.white,for: UIControlState.normal) // タイトルの色
         
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "Image"), for: .topAttached, barMetrics: .default) //navigation bar の背景画像の指定
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "NavigationBarHome"), for: .topAttached, barMetrics: .default) //navigation bar の背景画像の指定
         
         //EventsのボタンのUI設定
         Events.layer.cornerRadius = 10.0 // 角丸のサイズ
@@ -46,8 +48,27 @@ class ViewController: UIViewController {
         AR.backgroundColor = UIColor(red: 51/255, green: 204/255, blue: 153/255, alpha: 1) // 背景色
         
         AR.setTitleColor(UIColor.white,for: UIControlState.normal) // タイトルの色
+        
     }
 
+    //ここからTimer
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        timer.fire()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        timer.invalidate()
+    }
+    
+    func update(tm: Timer) {
+        // do something
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "NavigationBarHome"), for: .topAttached, barMetrics: .default) //navigation bar の背景画像の指定
+    }
+    //ここまでTimer
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

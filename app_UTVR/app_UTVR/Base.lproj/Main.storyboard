@@ -100,6 +100,9 @@
                     <navigationItem key="navigationItem" title="UT-virtual について" id="b4D-Qa-7Im">
                         <barButtonItem key="backBarButtonItem" title="Back" id="3gc-Cv-clr"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="NavigationBarAbout" destination="b4D-Qa-7Im" id="oMF-Ci-CYl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFq-qN-dWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRs-ww-iDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2854" y="1255"/>
+            <point key="canvasLocation" x="3110" y="2880"/>
         </scene>
         <!--駒場祭 Wonder Sphere VR-->
         <scene sceneID="Lbc-fA-nsE">
@@ -157,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5P-rD-dNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="791"/>
+            <point key="canvasLocation" x="1001" y="797"/>
         </scene>
         <!--ARで遊ぼう！-->
         <scene sceneID="NRw-pL-dD7">
