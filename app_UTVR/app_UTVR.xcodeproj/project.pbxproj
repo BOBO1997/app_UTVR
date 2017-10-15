@@ -14,6 +14,10 @@
 		23013B8A1F913C3900FCF4BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23013B881F913C3900FCF4BC /* LaunchScreen.storyboard */; };
 		23013B951F913C3900FCF4BC /* app_UTVRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23013B941F913C3900FCF4BC /* app_UTVRTests.swift */; };
 		23013BA01F913C3900FCF4BC /* app_UTVRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23013B9F1F913C3900FCF4BC /* app_UTVRUITests.swift */; };
+		2336CDE21F9344EF000B9E86 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336CDE11F9344EF000B9E86 /* EventViewController.swift */; };
+		2336CDE41F934E65000B9E86 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336CDE31F934E65000B9E86 /* ARViewController.swift */; };
+		2336CDE61F935505000B9E86 /* AboutToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336CDE51F935505000B9E86 /* AboutToolBar.swift */; };
+		235471BE1F9327FA0038FA72 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235471BD1F9327FA0038FA72 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		23013B9B1F913C3900FCF4BC /* app_UTVRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_UTVRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23013B9F1F913C3900FCF4BC /* app_UTVRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_UTVRUITests.swift; sourceTree = "<group>"; };
 		23013BA11F913C3900FCF4BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2336CDE11F9344EF000B9E86 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		2336CDE31F934E65000B9E86 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		2336CDE51F935505000B9E86 /* AboutToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutToolBar.swift; sourceTree = "<group>"; };
+		235471BD1F9327FA0038FA72 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				23013B7F1F913C3900FCF4BC /* AppDelegate.swift */,
 				23013B811F913C3900FCF4BC /* ViewController.swift */,
 				23013B831F913C3900FCF4BC /* Main.storyboard */,
+				2336CDE31F934E65000B9E86 /* ARViewController.swift */,
+				2336CDE51F935505000B9E86 /* AboutToolBar.swift */,
+				2336CDE11F9344EF000B9E86 /* EventViewController.swift */,
+				235471BD1F9327FA0038FA72 /* AboutViewController.swift */,
 				23013B861F913C3900FCF4BC /* Assets.xcassets */,
 				23013B881F913C3900FCF4BC /* LaunchScreen.storyboard */,
 				23013B8B1F913C3900FCF4BC /* Info.plist */,
@@ -262,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235471BE1F9327FA0038FA72 /* AboutViewController.swift in Sources */,
+				2336CDE21F9344EF000B9E86 /* EventViewController.swift in Sources */,
 				23013B821F913C3900FCF4BC /* ViewController.swift in Sources */,
 				23013B801F913C3900FCF4BC /* AppDelegate.swift in Sources */,
+				2336CDE41F934E65000B9E86 /* ARViewController.swift in Sources */,
+				2336CDE61F935505000B9E86 /* AboutToolBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +532,7 @@
 				23013BA61F913C3900FCF4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23013BA71F913C3900FCF4BC /* Build configuration list for PBXNativeTarget "app_UTVRTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +541,7 @@
 				23013BA91F913C3900FCF4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23013BAA1F913C3900FCF4BC /* Build configuration list for PBXNativeTarget "app_UTVRUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +550,7 @@
 				23013BAC1F913C3900FCF4BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
