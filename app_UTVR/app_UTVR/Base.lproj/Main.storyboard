@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ylA-jS-qGx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_UTVR" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,189 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5Y-LU-26s">
+                                <rect key="frame" x="36" y="93" width="303" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
+                                <state key="normal" title="UT-virtual について">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="highlighted" image="Image" backgroundImage="Image"/>
+                                <connections>
+                                    <segue destination="ExY-pc-5AQ" kind="show" id="NDU-uu-zJg"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-3B-99R">
+                                <rect key="frame" x="0.0" y="0.0" width="419" height="44"/>
+                                <items>
+                                    <barButtonItem width="342.5" id="sMV-qD-Ak0"/>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdN-LN-Fhk">
+                                <rect key="frame" x="219" y="234" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
+                                <state key="normal" title="AR">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gvd-PV-Lbb" kind="show" id="9kz-cM-rAC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ub-ve-wiH">
+                                <rect key="frame" x="16" y="234" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
+                                <state key="normal" title="駒場祭">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yE9-8j-bDn" kind="show" id="oik-i8-M4k"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nFc-3B-99R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="BLn-Ya-BUB"/>
+                            <constraint firstItem="nFc-3B-99R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="Esz-40-2H5"/>
+                            <constraint firstItem="nFc-3B-99R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="GP6-9G-cU5"/>
+                            <constraint firstItem="nFc-3B-99R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="I5n-HN-WQs"/>
+                            <constraint firstItem="nFc-3B-99R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-10" id="K4Z-E2-fby"/>
+                            <constraint firstItem="nFc-3B-99R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="XgF-S5-Ewp"/>
+                            <constraint firstItem="nFc-3B-99R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k5c-j9-5gM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9FR-Ip-Ohf"/>
+                    <connections>
+                        <outlet property="AR" destination="rdN-LN-Fhk" id="Psa-pF-D22"/>
+                        <outlet property="About" destination="T5Y-LU-26s" id="WRi-a6-Y8A"/>
+                        <outlet property="Events" destination="2ub-ve-wiH" id="ssd-LA-Gvd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1000.8" y="36.431784107946029"/>
+        </scene>
+        <!--UT-virtual について-->
+        <scene sceneID="VZh-xl-MZB">
+            <objects>
+                <viewController id="ExY-pc-5AQ" customClass="AboutViewController" customModule="app_UTVR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7t9-SD-mv3"/>
+                        <viewControllerLayoutGuide type="bottom" id="alc-UF-u29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9JQ-z2-7zh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="UT-virtual について" id="b4D-Qa-7Im">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="3gc-Cv-clr"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="NavigationBarAbout" destination="b4D-Qa-7Im" id="oMF-Ci-CYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFq-qN-dWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="36"/>
+        </scene>
+        <!--不必要なシーン-->
+        <scene sceneID="LlT-9Q-XSd">
+            <objects>
+                <viewController id="hcx-OY-4PZ" userLabel="不必要なシーン" customClass="AboutViewController" customModule="app_UTVR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v4d-2J-Oa3"/>
+                        <viewControllerLayoutGuide type="bottom" id="PuN-ni-DCm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="O5g-Qf-cw0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWo-lN-id1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Back" id="zc4-E8-kj6"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oWo-lN-id1" firstAttribute="top" secondItem="O5g-Qf-cw0" secondAttribute="top" id="Wbs-Bf-hX1"/>
+                            <constraint firstItem="oWo-lN-id1" firstAttribute="leading" secondItem="O5g-Qf-cw0" secondAttribute="leading" id="Wuy-zL-mUW"/>
+                            <constraint firstAttribute="trailing" secondItem="oWo-lN-id1" secondAttribute="trailing" id="vQq-3F-HI7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="UT-virtual について" id="b70-rK-SCN">
+                        <barButtonItem key="backBarButtonItem" title="BackTab" id="tAC-ei-epN"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="GSO-n1-cJm"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRs-ww-iDm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3110" y="2880"/>
+        </scene>
+        <!--駒場祭 Wonder Sphere VR-->
+        <scene sceneID="Lbc-fA-nsE">
+            <objects>
+                <viewController id="yE9-8j-bDn" customClass="EventViewController" customModule="app_UTVR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K3Z-TR-aQN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ckk-15-BxH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xaU-K1-PuF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="駒場祭 Wonder Sphere VR" id="YIL-Hx-Acu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5P-rD-dNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1001" y="797"/>
+        </scene>
+        <!--ARで遊ぼう！-->
+        <scene sceneID="NRw-pL-dD7">
+            <objects>
+                <viewController id="gvd-PV-Lbb" customClass="ARViewController" customModule="app_UTVR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gp2-QV-VLt"/>
+                        <viewControllerLayoutGuide type="bottom" id="xyW-Uy-Os2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T1g-Le-1BG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ARで遊ぼう！" id="wr2-qh-npj">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qgp-Mr-LpP"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sr-zc-197" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763" y="798"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mys-tI-hxG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ylA-jS-qGx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ry4-0Y-0aI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Qc-bh-1pZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKP-vk-GCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="25" height="25"/>
+    </resources>
 </document>
